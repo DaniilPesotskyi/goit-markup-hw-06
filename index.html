@@ -332,6 +332,17 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-third-colomn">
+                <label for="mailing" class="footer-form-title">Підпишіться на розсилку</label>
+                <form class="footer-form" action="">
+                    <input name="mailing" id="mailing" class="footer-form-input" type="text" placeholder="E-mail">
+                    <button class="footer-form-btn" type="submit">Підписатися
+                        <svg class="submit-icon-wrap" width="24" height="24">
+                            <use class="submit-icon" href="./images/icons-sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
@@ -341,7 +352,32 @@
                     <use href="./images/icons-sprite.svg#icon-modal-clouse"></use>
                 </svg>
             </button>
+            <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+            <form action="" class="modal-form">
+                <div class="modal-form-field">
+                    <label class="modal-input-label" for="name">Ім'я</label>
+                    <input class="modal-form-input" type="text" id="name">
+                </div>
+                <div class="modal-form-field">
+                    <label class="modal-input-label" for="tel">Телефон</label>
+                    <input class="modal-form-input" type="tel" id="tel">
+                </div>
+                <div class="modal-form-field">
+                    <label class="modal-input-label" for="email">Пошта</label>
+                    <input class="modal-form-input" type="email" id="email">
+                </div>
+                <div class="modal-form-field">
+                    <label class="modal-input-label" for="comment">Коментар</label>
+                    <textarea class="modal-form-textarea" id="comment" placeholder="Введіть текст"></textarea>
+                </div>
+                <div class="modal-form-policy">
+                    <input class="modal-form-checkbox" type="checkbox" class="modal-form-input" id="policy">
+                    <label class="modal-checkbox-label" for="policy">Погоджуюся з розсилкою та приймаю <a href="#" class="policy-link">Умови договору</a></label>
+                </div>
+                <button class="modal-submit-btn" type="submit">Відправити</button>
+            </form>
         </div>
+        <form action=""></form>
     </div>
     <script src="./js/modal.js"></script>
 </body>
