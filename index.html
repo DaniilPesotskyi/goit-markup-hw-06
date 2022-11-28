@@ -353,18 +353,33 @@
                 </svg>
             </button>
             <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
-            <form action="" class="modal-form">
+            <form action="" class="modal-form" autocomplete="off">
                 <div class="modal-form-field">
                     <label class="modal-input-label" for="name">Ім'я</label>
-                    <input class="modal-form-input" type="text" id="name">
+                    <div class="modal-input-field">
+                        <input class="modal-form-input" type="text" id="name">
+                        <svg class="modal-form-iconwrap" width="18" height="18">
+                            <use class="modal-form-icon" href="./images/icons-sprite.svg#icon-name"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="modal-form-field">
                     <label class="modal-input-label" for="tel">Телефон</label>
-                    <input class="modal-form-input" type="tel" id="tel">
+                    <div class="modal-input-field">
+                        <input class="modal-form-input" type="tel" id="tel">
+                        <svg class="modal-form-iconwrap" width="18" height="18">
+                            <use class="modal-form-icon" href="./images/icons-sprite.svg#icon-phone"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="modal-form-field">
                     <label class="modal-input-label" for="email">Пошта</label>
-                    <input class="modal-form-input" type="email" id="email">
+                    <div class="modal-input-field">
+                        <input class="modal-form-input" type="email" id="email">
+                        <svg class="modal-form-iconwrap" width="18" height="18">
+                            <use class="modal-form-icon" href="./images/icons-sprite.svg#icon-email"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="modal-form-field">
                     <label class="modal-input-label" for="comment">Коментар</label>
@@ -377,7 +392,6 @@
                 <button class="modal-submit-btn" type="submit">Відправити</button>
             </form>
         </div>
-        <form action=""></form>
     </div>
     <script src="./js/modal.js"></script>
 </body>
